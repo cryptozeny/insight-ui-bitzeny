@@ -112,7 +112,8 @@ angular.module('insight.system').controller('ScannerController',
     qrcode.callback = function(data) {
       _scanStop();
 
-      var str = (data.indexOf('bitzeny:') === 0) ? data.substring(8) : data; 
+      // var str = (data.indexOf('bitzeny:') === 0) ? data.substring(8) : data;
+      var str = (data.indexOf('litecoin:') === 0) ? data.substring(8) : data;
       console.log('QR code detected: ' + str);
       $searchInput
         .val(str)
@@ -126,7 +127,7 @@ angular.module('insight.system').controller('ScannerController',
 
     $modalInstance.opened.then(function() {
       $rootScope.isCollapsed = true;
-      
+
       // Start the scanner
       setTimeout(function() {
         canvas = document.getElementById('qr-canvas');
@@ -142,7 +143,7 @@ angular.module('insight.system').controller('ScannerController',
           canvas.height = 225;
           context.clearRect(0, 0, 300, 225);
 
-          navigator.getUserMedia({video: true}, _successCallback, _videoError); 
+          navigator.getUserMedia({video: true}, _successCallback, _videoError);
         }
       }, 500);
     });
