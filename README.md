@@ -1,6 +1,6 @@
-# Insight UI for BitZeny
+# Insight UI for Anzucoin
 
-A BitZeny blockchain explorer web application service for using the [Insight API for BitZeny](https://github.com/BitzenyCoreDevelopers/insight-api-bitzeny).
+A Anzucoin blockchain explorer web application service for using the [Insight API for Anzucoin](https://github.com/BitzenyCoreDevelopers/insight-api-bitzeny).
 
 ## Getting Started
 
